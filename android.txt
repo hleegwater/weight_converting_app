@@ -1,0 +1,3 @@
+title=Kook_app
+author=Hanneke Leegwater
+orientation=portrait

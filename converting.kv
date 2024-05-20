@@ -1,0 +1,33 @@
+<ConvertingWidget>:
+    orientation: 'vertical'
+#	These are all the boxes needed to convert food to volumes
+	Label:
+		text: "Food to volumes (in g)"
+		font_size: 50
+    TextInput:
+        font_size: 70
+        text: str(0)
+		on_text: root.store_value(args[1]) 
+    FloatLayout:
+		Spinner:
+			font_size: 80
+			pos_hint: {'center': (.5, .5)}
+			text: 'Unit'
+			values: root.all_foodnames
+			on_text: root.store_food_type(args[1])
+	Button:
+		font_size: 70
+		text: "Convert"
+		on_press: root.convert()
+	Label:
+		font_size: 70
+		text: root.new_value_ml
+	Label:
+		font_size: 70
+		text: root.new_value_teaspoon
+	Label:
+		font_size: 70
+		text: root.new_value_tablespoon
+	Label:
+		font_size: 70
+		text: root.new_value_cup

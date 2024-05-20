@@ -1,0 +1,6 @@
+# Format is name, density in kg/L
+Water, 1
+Milk, 1.03
+Flour, 0.57
+Butter, 0.86
+Sugar, 1.6
